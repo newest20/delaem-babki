@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sana_\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\tgbot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00DFB858-4A1E-4507-810F-8F986F011536}|tgbot\\tgbot.pyproj|C:\\Users\\sana_\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\tgbot\\tgbot\\tgbot.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{00DFB858-4A1E-4507-810F-8F986F011536}|tgbot\\tgbot.pyproj|solutionrelative:tgbot\\tgbot.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "tgbot.py",
+              "DocumentMoniker": "C:\\Users\\sana_\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\tgbot\\tgbot\\tgbot.py",
+              "RelativeDocumentMoniker": "tgbot\\tgbot.py",
+              "ToolTip": "C:\\Users\\sana_\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\tgbot\\tgbot\\tgbot.py",
+              "RelativeToolTip": "tgbot\\tgbot.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEZSURBVDhPrZMhjoRAEEU/G2QLJAJBJwgkFyAZNJpTYFBjCIKgJgiOgOQICA6ABNckiDYIJAkHqDW7G3rZySTM/uSLrup6XVVJa1w8CBcl3TvwBbhkLh70cSTatg3btqHr\u002BjEMwzDAGFNi31IAQgjUdQ0pJeI4BmMMbdtiGAbM84yqqo7Xgd\u002BAdV0RBAGiKEKSJEjTFOu6gnMOzjlM04TneccSdQf7vlNd1ySEoKIoqOs6CsPwNPvTHWzbhjzP4fs\u002BsizDOI643W4AAF3XUZYlHMc5lqgdSCmVFxhjNAwD9X1PQghqmubUgQKwLOvUJgByXffP3GmEZVmOxx9N0/Q0pwCu6H8BRHTyKykATdNOfqW3R9De\u002Bc4A8AnhJaveChMRqwAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-02-11T06:07:34.319Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

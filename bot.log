@@ -1,0 +1,1370 @@
+2025-04-23 17:14:34,777 - apscheduler.scheduler - INFO - Scheduler started
+2025-04-23 17:22:33,175 - apscheduler.scheduler - INFO - Scheduler started
+2025-04-23 17:54:37,988 - apscheduler.scheduler - INFO - Scheduler started
+2025-04-23 18:59:01,707 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB7730>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-23 18:59:01,709 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB75E0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-23 18:59:01,710 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB7A60>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-23 18:59:01,713 - telegram.ext.updater - ERROR - Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB7AF0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-23 18:59:01,714 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\sana_\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB7AF0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB7AF0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 2861, in get_updates
+    self._post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB7AF0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-23 18:59:02,718 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB7460>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-23 18:59:02,719 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB6BC0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-23 18:59:02,719 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB5F00>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-23 18:59:02,720 - telegram.ext.updater - ERROR - Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB7D00>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-23 18:59:02,720 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\sana_\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB7D00>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB7D00>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 2861, in get_updates
+    self._post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB7D00>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-23 18:59:04,227 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB7CD0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-23 18:59:04,228 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB7EB0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-23 18:59:04,228 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154040>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-23 18:59:04,229 - telegram.ext.updater - ERROR - Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154190>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-23 18:59:04,229 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\sana_\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154190>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154190>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 2861, in get_updates
+    self._post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154190>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-23 18:59:06,490 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB7E80>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-23 18:59:06,490 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154340>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-23 18:59:06,491 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154490>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-23 18:59:06,491 - telegram.ext.updater - ERROR - Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000184991545E0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-23 18:59:06,491 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\sana_\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000184991545E0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000184991545E0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 2861, in get_updates
+    self._post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000184991545E0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-23 18:59:09,876 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154190>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-23 18:59:09,877 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154790>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-23 18:59:09,877 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000184991548E0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-23 18:59:09,878 - telegram.ext.updater - ERROR - Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154A60>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-23 18:59:09,878 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\sana_\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154A60>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154A60>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 2861, in get_updates
+    self._post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154A60>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-23 22:00:29,871 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000184991546A0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-23 22:00:29,872 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154CA0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-23 22:00:29,873 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154E20>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-23 22:00:29,875 - telegram.ext.updater - ERROR - Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154FA0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-23 22:00:29,875 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\sana_\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154FA0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154FA0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 2861, in get_updates
+    self._post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154FA0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-24 12:43:28,890 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB7F70>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-24 12:43:28,957 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB7F10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-24 12:43:28,961 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB70D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-24 12:43:28,966 - telegram.ext.updater - ERROR - Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB73A0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-24 12:43:28,969 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\sana_\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB73A0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB73A0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 2861, in get_updates
+    self._post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB73A0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-24 12:43:40,363 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB7B50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-24 12:43:40,364 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018498EB6B00>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-24 12:43:40,364 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154A90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-24 12:43:40,365 - telegram.ext.updater - ERROR - Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154C10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-24 12:43:40,365 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\sana_\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154C10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154C10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 2861, in get_updates
+    self._post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499154C10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-24 20:30:14,652 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499155540>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-24 20:30:14,652 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000184991555A0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-24 20:30:14,652 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000184991556F0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-24 20:30:14,652 - telegram.ext.updater - ERROR - Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499155840>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-24 20:30:14,652 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\sana_\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499155840>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499155840>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 2861, in get_updates
+    self._post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499155840>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-24 20:30:15,662 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499155270>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-24 22:27:27,945 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499155A50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-24 22:27:27,949 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499155BA0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-24 22:27:27,950 - telegram.ext.updater - ERROR - Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499155CF0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-24 22:27:27,951 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\sana_\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499155CF0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499155CF0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 2861, in get_updates
+    self._post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499155CF0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-24 22:27:29,455 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499155840>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-24 22:27:29,455 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499155EA0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-24 22:27:29,455 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000018499156020>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates
+2025-04-24 22:27:29,455 - telegram.ext.updater - ERROR - Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000184991561A0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-24 22:27:29,457 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\sana_\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000184991561A0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000184991561A0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\ext\extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 2861, in get_updates
+    self._post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\telegram\utils\request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7584008459:AAGCuMVDsGIoti120SN0hmSXked6BCCeHm8/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000184991561A0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2025-04-30 11:58:50,665 - aiogram.dispatcher - INFO - Start polling
+2025-04-30 11:58:50,879 - aiogram.dispatcher - INFO - Run polling for bot @testforshop1102bot id=7584008459 - 'test1'
+2025-04-30 11:59:29,126 - aiogram.event - INFO - Update id=8307454 is handled. Duration 218 ms by bot id=7584008459
+2025-04-30 11:59:36,884 - aiogram.event - INFO - Update id=8307455 is handled. Duration 94 ms by bot id=7584008459
+2025-04-30 11:59:46,202 - aiogram.event - INFO - Update id=8307456 is handled. Duration 203 ms by bot id=7584008459
+2025-04-30 12:00:00,044 - aiogram.event - INFO - Update id=8307457 is handled. Duration 139 ms by bot id=7584008459
+2025-04-30 12:00:03,526 - aiogram.event - INFO - Update id=8307458 is handled. Duration 171 ms by bot id=7584008459
+2025-04-30 12:00:03,857 - aiogram.event - INFO - Update id=8307459 is handled. Duration 156 ms by bot id=7584008459
+2025-04-30 12:00:04,412 - aiogram.event - INFO - Update id=8307460 is handled. Duration 187 ms by bot id=7584008459
+2025-04-30 12:00:04,900 - aiogram.event - INFO - Update id=8307461 is handled. Duration 202 ms by bot id=7584008459
+2025-04-30 12:00:13,808 - aiogram.event - INFO - Update id=8307462 is handled. Duration 250 ms by bot id=7584008459
+2025-04-30 12:00:19,607 - aiogram.event - INFO - Update id=8307463 is not handled. Duration 63 ms by bot id=7584008459
+2025-04-30 12:00:19,607 - aiogram.event - ERROR - Cause exception while process update id=8307463 by bot id=7584008459
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 90
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 88, in handle_main_menu
+    await show_info(message)
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 195, in show_info
+    await message.answer(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\client\bot.py", line 441, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\client\session\aiohttp.py", line 179, in make_request
+    response = self.check_response(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 90
+2025-04-30 12:00:25,719 - aiogram.event - INFO - Update id=8307464 is not handled. Duration 62 ms by bot id=7584008459
+2025-04-30 12:00:25,719 - aiogram.event - ERROR - Cause exception while process update id=8307464 by bot id=7584008459
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 90
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 88, in handle_main_menu
+    await show_info(message)
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 195, in show_info
+    await message.answer(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\client\bot.py", line 441, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\client\session\aiohttp.py", line 179, in make_request
+    response = self.check_response(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 90
+2025-04-30 12:00:27,762 - aiogram.event - INFO - Update id=8307465 is not handled. Duration 62 ms by bot id=7584008459
+2025-04-30 12:00:27,762 - aiogram.event - ERROR - Cause exception while process update id=8307465 by bot id=7584008459
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 90
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 88, in handle_main_menu
+    await show_info(message)
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 195, in show_info
+    await message.answer(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\client\bot.py", line 441, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\client\session\aiohttp.py", line 179, in make_request
+    response = self.check_response(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 90
+2025-04-30 12:00:28,006 - aiogram.event - INFO - Update id=8307466 is not handled. Duration 78 ms by bot id=7584008459
+2025-04-30 12:00:28,007 - aiogram.event - ERROR - Cause exception while process update id=8307466 by bot id=7584008459
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 90
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 88, in handle_main_menu
+    await show_info(message)
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 195, in show_info
+    await message.answer(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\client\bot.py", line 441, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\client\session\aiohttp.py", line 179, in make_request
+    response = self.check_response(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 90
+2025-04-30 12:00:30,481 - aiogram.event - INFO - Update id=8307467 is handled. Duration 110 ms by bot id=7584008459
+2025-04-30 12:00:32,669 - aiogram.event - INFO - Update id=8307468 is handled. Duration 171 ms by bot id=7584008459
+2025-04-30 12:00:34,347 - aiogram.event - INFO - Update id=8307469 is not handled. Duration 0 ms by bot id=7584008459
+2025-04-30 12:00:36,277 - aiogram.event - INFO - Update id=8307470 is handled. Duration 93 ms by bot id=7584008459
+2025-04-30 12:00:37,400 - aiogram.event - INFO - Update id=8307471 is handled. Duration 171 ms by bot id=7584008459
+2025-04-30 12:00:38,589 - aiogram.event - INFO - Update id=8307472 is handled. Duration 264 ms by bot id=7584008459
+2025-04-30 12:17:51,148 - aiogram.dispatcher - INFO - Start polling
+2025-04-30 12:17:51,367 - aiogram.dispatcher - INFO - Run polling for bot @testforshop1102bot id=7584008459 - 'test1'
+2025-04-30 12:17:51,430 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-04-30 12:17:51,430 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7584008459)
+2025-04-30 12:17:55,525 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-04-30 12:17:55,525 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7584008459)
+2025-04-30 12:17:56,595 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-04-30 12:17:56,595 - aiogram.dispatcher - WARNING - Sleep for 1.563932 seconds and try again... (tryings = 1, bot id = 7584008459)
+2025-04-30 12:17:56,992 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 7584008459)
+2025-04-30 12:17:57,256 - aiogram.event - INFO - Update id=8307473 is handled. Duration 266 ms by bot id=7584008459
+2025-04-30 12:18:01,236 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-04-30 12:18:01,236 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7584008459)
+2025-04-30 12:18:01,791 - aiogram.dispatcher - INFO - Connection established (tryings = 2, bot id = 7584008459)
+2025-04-30 12:18:02,015 - aiogram.event - INFO - Update id=8307474 is handled. Duration 219 ms by bot id=7584008459
+2025-04-30 12:18:02,403 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-04-30 12:18:02,403 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7584008459)
+2025-04-30 12:18:06,475 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-04-30 12:18:06,475 - aiogram.dispatcher - WARNING - Sleep for 1.286438 seconds and try again... (tryings = 1, bot id = 7584008459)
+2025-04-30 12:18:07,846 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-04-30 12:18:07,846 - aiogram.dispatcher - WARNING - Sleep for 1.463096 seconds and try again... (tryings = 1, bot id = 7584008459)
+2025-04-30 12:18:08,104 - aiogram.dispatcher - INFO - Connection established (tryings = 2, bot id = 7584008459)
+2025-04-30 12:18:08,105 - aiogram.event - INFO - Update id=8307475 is not handled. Duration 0 ms by bot id=7584008459
+2025-04-30 12:18:08,105 - aiogram.event - ERROR - Cause exception while process update id=8307475 by bot id=7584008459
+TypeError: 'Service' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 145, in handle_main_menu
+    await show_packages(message)
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 166, in show_packages
+    base_price = sum(service['price'] for _, service in base_services)
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 166, in <genexpr>
+    base_price = sum(service['price'] for _, service in base_services)
+TypeError: 'Service' object is not subscriptable
+2025-04-30 12:18:12,385 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-04-30 12:18:12,385 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7584008459)
+2025-04-30 12:18:13,454 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-04-30 12:18:13,454 - aiogram.dispatcher - WARNING - Sleep for 1.744140 seconds and try again... (tryings = 2, bot id = 7584008459)
+2025-04-30 12:18:13,576 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 7584008459)
+2025-04-30 12:18:13,577 - aiogram.event - INFO - Update id=8307476 is not handled. Duration 0 ms by bot id=7584008459
+2025-04-30 12:18:13,577 - aiogram.event - ERROR - Cause exception while process update id=8307476 by bot id=7584008459
+TypeError: 'Service' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 149, in handle_main_menu
+    await show_individual_selection(message)
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 210, in show_individual_selection
+    reply_markup=get_services_keyboard(set()),
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 96, in get_services_keyboard
+    text=f"{checkbox} {service['name']} - {service['price']}\u20bd",
+TypeError: 'Service' object is not subscriptable
+2025-04-30 12:18:14,764 - aiogram.event - INFO - Update id=8307477 is not handled. Duration 0 ms by bot id=7584008459
+2025-04-30 12:18:16,252 - aiogram.dispatcher - INFO - Connection established (tryings = 3, bot id = 7584008459)
+2025-04-30 12:18:16,385 - aiogram.event - INFO - Update id=8307478 is handled. Duration 141 ms by bot id=7584008459
+2025-04-30 12:18:16,767 - aiogram.event - INFO - Update id=8307479 is handled. Duration 141 ms by bot id=7584008459
+2025-04-30 12:18:18,274 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-04-30 12:18:18,274 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7584008459)
+2025-04-30 12:18:19,335 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-04-30 12:18:19,335 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7584008459)
+2025-04-30 12:18:22,688 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 7584008459)
+2025-04-30 12:18:22,984 - aiogram.event - INFO - Update id=8307480 is handled. Duration 297 ms by bot id=7584008459
+2025-04-30 12:18:23,411 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-04-30 12:18:23,411 - aiogram.dispatcher - WARNING - Sleep for 1.280371 seconds and try again... (tryings = 1, bot id = 7584008459)
+2025-04-30 12:18:24,612 - aiogram.event - INFO - Update id=8307481 is handled. Duration 156 ms by bot id=7584008459
+2025-04-30 12:18:24,751 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-04-30 12:18:24,751 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7584008459)
+2025-04-30 12:18:28,220 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 7584008459)
+2025-04-30 12:18:28,744 - aiogram.event - INFO - Update id=8307482 is handled. Duration 531 ms by bot id=7584008459
+2025-04-30 12:18:28,827 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-04-30 12:18:28,827 - aiogram.dispatcher - WARNING - Sleep for 1.694830 seconds and try again... (tryings = 2, bot id = 7584008459)
+2025-04-30 12:18:30,594 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-04-30 12:18:30,594 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7584008459)
+2025-04-30 12:18:34,663 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-04-30 12:18:34,663 - aiogram.dispatcher - WARNING - Sleep for 2.220671 seconds and try again... (tryings = 3, bot id = 7584008459)
+2025-04-30 12:18:58,673 - aiogram.dispatcher - INFO - Start polling
+2025-04-30 12:18:58,876 - aiogram.dispatcher - INFO - Run polling for bot @testforshop1102bot id=7584008459 - 'test1'
+2025-04-30 12:19:11,638 - aiogram.event - INFO - Update id=8307483 is not handled. Duration 0 ms by bot id=7584008459
+2025-04-30 12:19:14,906 - aiogram.event - INFO - Update id=8307484 is handled. Duration 281 ms by bot id=7584008459
+2025-04-30 12:19:16,970 - aiogram.event - INFO - Update id=8307485 is not handled. Duration 0 ms by bot id=7584008459
+2025-04-30 12:19:16,970 - aiogram.event - ERROR - Cause exception while process update id=8307485 by bot id=7584008459
+TypeError: 'Service' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 149, in handle_main_menu
+    await show_individual_selection(message)
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 210, in show_individual_selection
+    reply_markup=get_services_keyboard(set()),
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 96, in get_services_keyboard
+    text=f"{checkbox} {service['name']} - {service['price']}\u20bd",
+TypeError: 'Service' object is not subscriptable
+2025-04-30 12:19:32,258 - aiogram.event - INFO - Update id=8307486 is not handled. Duration 0 ms by bot id=7584008459
+2025-04-30 12:20:31,978 - aiogram.dispatcher - INFO - Start polling
+2025-04-30 12:20:32,188 - aiogram.dispatcher - INFO - Run polling for bot @testforshop1102bot id=7584008459 - 'test1'
+2025-04-30 12:20:54,869 - aiogram.event - INFO - Update id=8307487 is not handled. Duration 0 ms by bot id=7584008459
+2025-04-30 12:21:02,153 - aiogram.event - INFO - Update id=8307488 is handled. Duration 375 ms by bot id=7584008459
+2025-04-30 12:21:25,857 - aiogram.event - INFO - Update id=8307489 is not handled. Duration 0 ms by bot id=7584008459
+2025-04-30 12:21:25,857 - aiogram.event - ERROR - Cause exception while process update id=8307489 by bot id=7584008459
+TypeError: 'Service' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 143, in handle_main_menu
+    await show_catalog(message)
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 156, in show_catalog
+    catalog_text += f"*{service['name']}*\n"
+TypeError: 'Service' object is not subscriptable
+2025-04-30 12:21:30,904 - aiogram.event - INFO - Update id=8307490 is not handled. Duration 0 ms by bot id=7584008459
+2025-04-30 12:21:30,904 - aiogram.event - ERROR - Cause exception while process update id=8307490 by bot id=7584008459
+TypeError: 'Service' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 145, in handle_main_menu
+    await show_packages(message)
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 166, in show_packages
+    base_price = sum(service['price'] for _, service in base_services)
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 166, in <genexpr>
+    base_price = sum(service['price'] for _, service in base_services)
+TypeError: 'Service' object is not subscriptable
+2025-04-30 12:22:50,296 - aiogram.event - INFO - Update id=8307491 is not handled. Duration 0 ms by bot id=7584008459
+2025-04-30 12:22:50,297 - aiogram.event - ERROR - Cause exception while process update id=8307491 by bot id=7584008459
+TypeError: 'Service' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 143, in handle_main_menu
+    await show_catalog(message)
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 156, in show_catalog
+    catalog_text += f"*{service['name']}*\n"
+TypeError: 'Service' object is not subscriptable
+2025-04-30 12:22:50,722 - aiogram.event - INFO - Update id=8307492 is not handled. Duration 0 ms by bot id=7584008459
+2025-04-30 12:22:50,722 - aiogram.event - ERROR - Cause exception while process update id=8307492 by bot id=7584008459
+TypeError: 'Service' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 145, in handle_main_menu
+    await show_packages(message)
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 166, in show_packages
+    base_price = sum(service['price'] for _, service in base_services)
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 166, in <genexpr>
+    base_price = sum(service['price'] for _, service in base_services)
+TypeError: 'Service' object is not subscriptable
+2025-04-30 12:22:51,044 - aiogram.event - INFO - Update id=8307493 is not handled. Duration 0 ms by bot id=7584008459
+2025-04-30 12:22:51,044 - aiogram.event - ERROR - Cause exception while process update id=8307493 by bot id=7584008459
+TypeError: 'Service' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\sana_\PycharmProjects\PythonProject\venv1\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 149, in handle_main_menu
+    await show_individual_selection(message)
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 210, in show_individual_selection
+    reply_markup=get_services_keyboard(set()),
+  File "C:\Users\sana_\OneDrive\Рабочий стол\tgbot\bot.py", line 96, in get_services_keyboard
+    text=f"{checkbox} {service['name']} - {service['price']}\u20bd",
+TypeError: 'Service' object is not subscriptable
+2025-04-30 12:22:51,458 - aiogram.event - INFO - Update id=8307494 is not handled. Duration 0 ms by bot id=7584008459
+2025-04-30 12:23:50,660 - aiogram.dispatcher - INFO - Start polling
+2025-04-30 12:23:50,868 - aiogram.dispatcher - INFO - Run polling for bot @testforshop1102bot id=7584008459 - 'test1'
+2025-04-30 12:24:24,034 - aiogram.event - INFO - Update id=8307495 is not handled. Duration 0 ms by bot id=7584008459
+2025-04-30 12:25:44,507 - aiogram.event - INFO - Update id=8307496 is not handled. Duration 0 ms by bot id=7584008459
+2025-04-30 12:25:58,161 - aiogram.event - INFO - Update id=8307497 is not handled. Duration 0 ms by bot id=7584008459
